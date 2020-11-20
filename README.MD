@@ -15,7 +15,11 @@ docker build . --tag ttaenc-builder
 
 ```sh
 mkdir -p bin
-docker run --rm -e "BIN_OWNER=$(id -u):$(id -g)" -v "$PWD/bin:/workspace/bin" -v "$PWD/scripts:/scripts" ttaenc-builder
+docker run --rm \
+    -e "BIN_OWNER=$(id -u):$(id -g)" \
+    -v "$PWD/bin:/workspace/bin" \
+    -v "$PWD/scripts:/scripts" \
+    ttaenc-builder
 ```
 
 构建好的文件将放到 `bin` 目录。
