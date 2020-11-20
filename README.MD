@@ -29,3 +29,9 @@ docker run --rm \
 ```sh
 docker rmi ttaenc-builder
 ```
+
+---
+
+* [1][1]: AUR 上的 ttaenc 包文件。
+
+[1]: https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ttaenc
