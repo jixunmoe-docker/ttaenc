@@ -24,5 +24,5 @@ sed -i -E 's/(CFLAGS\s*)=/\1?=/' "Makefile"
 make ttaenc
 
 # Copy
-chown "$BIN_OWNER" ttaenc
+[ -n "$BIN_OWNER" ] && chown "$BIN_OWNER" ttaenc
 cp -p ttaenc /workspace/bin/
